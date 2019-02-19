@@ -14,28 +14,22 @@ Before you get started, you will need to have the following:
 Node
 ```
 
-```
-create-react-app
-```
-
-```
-postgres
-```
-
-
 ### Installing
 
 Run the following to install on your local environment
+
 
 Clone the repo
 ```
 git clone https://github.com/dvdlin214/facial_recognition_app.git
 ```
 
+
 Install packages
 ```
 npm install
 ```
+
 
 Run the app
 ```
@@ -48,12 +42,6 @@ npm start
 - Create-React-App
 - react-tilt
 - particles.js
-- Bcrypt
-- Postgresql
-- knex
-- body parser
-- cors
-- express
 
 ### APIs
 - [Clarifai](https://www.clarifai.com/)
