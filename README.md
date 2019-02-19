@@ -6,14 +6,6 @@ The Facial Recognition App uses the Clarifai API to locate a face on a picture. 
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
-
-Before you get started, you will need to have the following: 
-
-```
-Node
-```
-
 ### Installing
 
 Run the following to install on your local environment
