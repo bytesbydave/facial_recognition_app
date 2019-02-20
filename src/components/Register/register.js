@@ -35,7 +35,7 @@ class Register extends React.Component {
       .then(response => response.json())
       .then(user => {
         if (user.id) {
-          this.props.loadUser(user)
+          this.props.loadUser(user);
           this.props.onRouteChange('home');
         }
       });
@@ -43,27 +43,41 @@ class Register extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="ui raised very padded text container segment form-contain">
         <div className="ui form">
+          <h2>Sign Up</h2>
           <div className="field">
             <label>Name</label>
-            <input type="text" name="name" placeholder="Name" onChange={this.onNameChange} />
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your full name"
+              onChange={this.onNameChange}
+            />
           </div>
           <div className="field">
             <label>Email</label>
-            <input type="text" name="email" placeholder="Email" onChange={this.onEmailChange} />
+            <input
+              type="text"
+              name="email"
+              placeholder="Enter your email"
+              onChange={this.onEmailChange}
+            />
           </div>
           <div className="field">
             <label>Password</label>
-            <input type="password" name="password" placeholder="Password" onChange={this.onPasswordChange} />
+            <input
+              type="password"
+              name="password"
+              placeholder="Create a password"
+              onChange={this.onPasswordChange}
+            />
           </div>
-          <button
-            onClick={this.onSubmitSignIn}
-            className="ui button"
-            type="submit"
-          >
-            Register
-          </button>
+          <div className="ui center aligned basic segment">
+            <div onClick={this.onSubmitSignIn} className="ui secondary button">
+              Register
+            </div>
+          </div>
         </div>
       </div>
     );

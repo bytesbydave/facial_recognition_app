@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../css/signin.css';
 
 class Signin extends React.Component {
   constructor(props) {
@@ -38,15 +39,16 @@ class Signin extends React.Component {
   render() {
     const { onRouteChange } = this.props;
     return (
-      <div className="container">
+      <div className="ui raised very padded text container segment form-contain">
         <div className="ui form">
+          <h2>Sign In</h2>
           <div className="field">
             <label>Email</label>
             <input
               onChange={this.onEmailChange}
               type="email"
               name="email"
-              placeholder="Email"
+              placeholder="Enter your email"
             />
           </div>
           <div className="field">
@@ -55,18 +57,21 @@ class Signin extends React.Component {
               onChange={this.onPasswordChange}
               type="password"
               name="password"
-              placeholder="Password"
+              placeholder="Enter password"
             />
           </div>
-          <div>
-            <input
-              onClick={this.onSubmitSignIn}
-              className="ui button"
-              type="submit"
-              value="Sign In"
-            />
+          <div className="ui center aligned basic segment">
+            <div className="ui secondary button" onClick={this.onSubmitSignIn}
+              value="Sign In">
+              Sign In
+            </div>
+            <div className="ui horizontal divider">
+              Or
+            </div>
+            <div className="ui button" onClick={() => onRouteChange('register')}>
+              Register
+            </div>
           </div>
-          <p onClick={() => onRouteChange('register')}>Register</p>
         </div>
       </div>
     );
