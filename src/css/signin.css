@@ -1,0 +1,11 @@
+label {
+  text-align: left;
+}
+
+.pointer-link {
+  cursor: pointer;
+}
+
+.form-contain {
+  padding-top: 50px;
+}
