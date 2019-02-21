@@ -9,7 +9,7 @@ const Logo = () => {
       <Tilt
         className="Tilt"
         options={{ max: 45 }}
-        style={{ height: 250, width: 250 }}
+        style={{ height: 100, width: 100 }}
       >
         <div className="Tilt-inner">
           <img src={eye} alt="logo" />

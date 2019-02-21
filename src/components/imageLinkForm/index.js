@@ -2,13 +2,22 @@ import React from 'react';
 
 const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
   return (
-    <div>
-      <p>
-        {'This magic brain wil detect faces in your pictures; give it a try'}
-      </p>
-      <div>
-        <input type="text" onChange={onInputChange} />
-        <button onClick={onButtonSubmit}>Detect</button>
+    <div className="ui raised very padded text container segment">
+      <h3>
+        {'This magic machine will detect faces in your pictures. Give it a try'}
+      </h3>
+      <div className="ui center aligned basic segment">
+        <div className="ui left icon action input">
+          <i className="search icon" />
+          <input
+            type="text"
+            placeholder="Photo URL"
+            onChange={onInputChange}
+          />
+          <div className="ui blue submit button" onClick={onButtonSubmit}>
+            Detect
+          </div>
+        </div>
       </div>
     </div>
   );

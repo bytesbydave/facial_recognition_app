@@ -9,4 +9,22 @@
 
 .picture-display {
   position: absolute;
+  padding-bottom: 50px;
+}
+
+.picture-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pic-display {
+  width: 500px;
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .pic-display {
+    width: 300px;
+    height: auto;
+  }
 }
