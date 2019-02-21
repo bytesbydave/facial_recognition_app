@@ -6,7 +6,12 @@ const FaceRecognition = ({ imageUrl, box }) => {
     return (
       <div className="picture-container">
         <div className="picture-display">
-          <img id="image-input" src={imageUrl} alt="facial" />
+          <img
+            id="image-input"
+            src={imageUrl}
+            alt="facial"
+            className="pic-display"
+          />
           <div
             className="bounding-box"
             style={{
