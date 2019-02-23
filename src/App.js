@@ -25,7 +25,7 @@ const initialState = {
   input: '',
   imageUrl: '',
   box: {},
-  route: 'signin',
+  route: 'home',
   isSignedIn: false,
   user: {
     id: '',
@@ -126,6 +126,7 @@ class App extends Component {
             <div>
               <Logo />
               <Rank
+                isSignedIn={this.state.isSignedIn}
                 name={this.state.user.name}
                 entries={this.state.user.entries}
               />
