@@ -11,7 +11,7 @@ const Rank = ({ name, entries, isSignedIn }) => {
   } else {
     return (
       <div>
-        <h2>Sign in to record your entries</h2>
+        {/* <h2>Sign in to record your entries</h2> */}
       </div>
     )
   }

@@ -6,6 +6,7 @@ const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
       <h3>
         {'This magic machine will detect faces in your pictures. Give it a try'}
       </h3>
+      <h3>https://cosmicbook.news/images2/spider-man-far-from-home-international-poster.jpg</h3>
       <div className="ui center aligned basic segment">
         <div className="ui left icon action input">
           <i className="search icon" />
