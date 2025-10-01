@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "clarifai": "^2.9.0",
+    "clarifai": "^2.9.1",
     "faker": "^4.1.0",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
